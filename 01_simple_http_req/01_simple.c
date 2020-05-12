@@ -1,4 +1,7 @@
 // very simple http request. 01 of 68ex (https://github.com/jinto/68ex)
+//
+// gcc -o 01_simple 01_simple.c
+//
 #include <errno.h>
 #include <stdio.h>
 #include <stdlib.h>
@@ -18,7 +21,7 @@ int main( int argc, char **argv)
 
     sock  = socket(PF_INET, SOCK_STREAM, 0);
     if(sock == -1) {
-        printf("Cannot create sockert.\n");
+        printf("Cannot create socket.\n");
         exit(1);
     }
 
@@ -28,7 +31,7 @@ int main( int argc, char **argv)
     sock_addr.sin_addr.s_addr= inet_addr("172.217.31.142");     // ping google.com
 
     if(connect(sock, (struct sockaddr*)&sock_addr, sizeof(sock_addr)) == -1) {
-        printf("Failed to conn (errno: %d)\n", errno);
+        printf("Failed to connect (errno: %d)\n", errno);
         exit(1);
     }
 

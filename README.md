@@ -1,5 +1,6 @@
-I've just read `68 Small and Large Projects to Make You a Better Developer`.
-I'm trying to build some of them.
+I've read `68 Small and Large Projects to Make You a Better Developer`. 
+
+And it seems to be worth trying.
 
 1) Make a simple HTTP request only using TCP sockets
 2) Create a website that shows a map of the coronavirus using MapBox and John Hopkins COVID-19 data.

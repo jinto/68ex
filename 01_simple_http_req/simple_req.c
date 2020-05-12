@@ -1,4 +1,4 @@
-// very simple http request. 01 of 68ex 
+// very simple http request. 01 of 68ex (https://github.com/jinto/68ex)
 #include <errno.h>
 #include <stdio.h>
 #include <stdlib.h>
